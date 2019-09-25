@@ -1,0 +1,118 @@
+<<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css" />
+    <title>Weather</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  </head>
+
+  <body>
+    <header>My 7-Day Forecast</header>
+      <h2><div id="cityname"></div></h2>
+      <div id="toprow">
+          <div class="intoprow">
+              <h3><div class="date" id="Day0Date">Today</div></h3>
+              <script>//print out todays date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate(), monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day0Date").innerHTML = "Today: " + monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="today"></div>
+          </div>
+          <div class="intoprow">
+              <h3><div class="date" id="Day1Date">Tommorrow</div></h3>
+              <script>//print out Next days date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 1, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day1Date").innerHTML = "Tommorrow: " + monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day1"></div>
+          </div>
+          <div class="intoprow">
+              <h3><div class="date" id="Day2Date">Day3</div></h3>
+              <script>//print out Next 2 days date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 2, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day2Date").innerHTML = monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day2"></div>
+          </div>
+      <div id="bottomrow">
+          <div class="inbottomrow">
+              <h3><div class="date" id="Day3Date">Day3</div></h3>
+              <script>//print out Next 3 days date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 3, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day3Date").innerHTML = monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day3"></div>
+          </div>
+          <div class="inbottomrow">
+              <h3><div class="date" id="Day4Date">Day4</div></h3>
+              <script>//print out Next 4 days date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 4, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day4Date").innerHTML = monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day4"></div>
+          </div>
+          <div class="inbottomrow">
+              <h3><div class="date" id="Day5Date">Day5</div></h3>
+              <script>//print out Next 5 days date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 5, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day5Date").innerHTML = monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day5"></div>
+          </div>
+          <div class="inbottomrow">
+              <h3><div class="date" id="Day6Date">Day6</div></h3>
+              <script>//print out Next weeks date
+                  var today = new Date();
+                  var monthNames = [
+                      "January", "February", "March","April", "May", "June", "July",
+                      "August", "September", "October","November", "December"
+                    ];
+                  var day = today.getDate() + 6, monthIndex = today.getMonth(), year = today.getFullYear();
+                  document.getElementById("Day6Date").innerHTML = monthNames[monthIndex] + ' ' + day + ", " + year;
+              </script>
+              <div class ="tempinfo" id="Day6"></div>
+          </div>
+      </div>
+      <br><br>
+      <form>
+          List the name of your city:
+          <input type="text" name="mycity" id="mycity" >
+      <!--    <input type="button" value="Enter" onclick="setCity()"/>-->
+          <input type="button" value="Enter"/>
+
+      </form>
+  </body>
+<script src="forecast.js"></script>
+</html>>

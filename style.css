@@ -1,0 +1,56 @@
+html {
+  font-family: "Avenir Next", Helevetica, sans-serif;
+  text-align: center;
+}
+
+body {
+  margin: 0 auto;
+}
+
+h1,h2 {
+  font-weight: 100;
+  padding:0;
+}
+h3{
+  padding:0;
+  margin:0;
+}
+header{
+  font-size: 30pt;
+  color:black;
+  
+}
+#toprow{
+  width:100%;
+  border-color:black;
+}
+.date{
+  height:25%;
+
+}
+.tempinfo{
+  height:65%;
+  cursor: pointer;
+}
+ .intoprow{
+   width:30%;
+   height:20%;
+   padding:2pt;
+   margin-top:10pt;
+   display:inline-block;
+   text-align:center;
+   vertical-align:top;
+   border:2px solid;
+   border-color:black;
+ }
+.inbottomrow{
+  width:22%;
+  height:20%;
+  padding:2pt;
+  margin-top:10pt;
+  display:inline-block;
+  text-align:center;
+  vertical-align:top;
+  border:2px solid;
+  border-color:black;
+}
